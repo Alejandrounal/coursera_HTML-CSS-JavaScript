@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: dotted;
+    color: black;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    font-size: 50px;
+}
+
+.box { 
+    width: 100%;
+}
+
+p {
+    text-align: center;
+    float: right;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    
+}
+
+#sub1, #sub2, #sub3{
+    border:2px solid black;
+    font-size: 18px;
+    font-weight: bold;
+}
+#sub1{
+    background-color: #E2816C;
+    
+}
+
+#sub2{
+   background-color: #CE2823;
+   color: aliceblue; 
+}
+
+#sub3{
+    background-color: #EAA51B;
+}
+
+.text{
+    float: left;
+    height: auto;
+    position: relative;
+    width: 100%;
+    padding: 2%;
+}
+
+.lg, .md, .sm {
+    background-color: gray; 
+    outline: 3px solid black;
+    margin-left: 3%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+
+@media(min-width: 992px){
+    .lg {
+        float:left;
+        width: 29%;
+    }
+    #third{
+        margin-right: 2%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .lg, .md {
+        float: left;
+    }
+
+    .md {
+        width: 46%;
+    }
+
+    #second{
+        margin-right: 2%;
+    }
+    #sub3{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #third {
+        margin-right: 15%;
+        margin-left: 3%;
+        width: 95%;
+    }
+
+}
+
+@media (min-width: 0px) and (max-width: 767px){
+    .sm{
+        float: left;
+        width: 85%;
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+}
