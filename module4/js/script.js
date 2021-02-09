@@ -21,3 +21,14 @@ console.log(circle.getArea(10));
     console.log("Hi mister"  + name);
 })("alejandro");
 
+
+(function(){
+    var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+    for(person in names){
+        if(names[person][0]==="j" || names[person][0]==="J"){
+            console.log("Good by " + names[person]);
+        }else{
+            console.log("Hello " + names[person]);
+        }
+    }
+})();
